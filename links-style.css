@@ -1,0 +1,65 @@
+/*---------LINKS stylesheet----------*/
+*{
+  text-decoration: none;
+}
+
+a{
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.a-link{
+  color: green;
+  border-bottom: 2px solid rgb(48, 199, 232);
+}
+
+.a-link:link{
+  font-size: 27px;
+  color: red;
+  border-bottom: 4px solid rgb(48, 199, 232);
+}
+.a-visited:link{
+  font-size: 27px;
+  color: orange;
+  border-bottom: 4px dotted black;
+}
+
+.a-visited{
+  border-bottom: 3px solid blue;
+  color: black;
+}
+.a-visited:visited{
+  border-bottom: 3px solid rgb(206, 48, 232);
+  color: rgb(76, 65, 195);
+}
+
+.a-hover {
+  font-size: 27px;
+  color: rgb(210, 27, 99);
+  border-bottom: 4px solid black;
+}
+.a-hover:hover {
+  color: rgb(201, 27, 210);
+  border-bottom: 6px solid rgb(129, 237, 44);
+  transition: 0.25s ease-in;
+}
+
+.a-active{
+  font-size: 27px;
+  color: rgb(22, 106, 175);
+  border-bottom: 4px dotted rgb(187, 156, 23);
+  transition: 0.25s;
+}
+.a-active:active{
+  color: rgb(117, 236, 230);
+  border-bottom: 4px dotted rgb(213, 231, 10);
+}
+
+.add-brd{
+  font-size: 27px;
+  color: rgb(79, 41, 149);
+  transition: 0.2s;
+}
+.add-brd:hover{
+  border-bottom: 3px solid black;
+}

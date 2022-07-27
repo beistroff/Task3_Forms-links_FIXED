@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="forms-style.css">
+  <title>Forms</title>
+</head>
+
+<body>
+  <main>
+    <form action="form-succes.html">
+      <div class="form-container">
+
+        <div class="inline-container">
+          <div class="first-name">
+            <label class="first-name" for="name">First name</label>
+            <input pattern="[a-zA-Z]{2,16}" type="text" minlength="3" maxlength="15" placeholder="Enter first name" autofocus required>
+          </div>
+          <div class="last-name">
+            <label for="surname">Last name</label>
+            <input pattern="[a-zA-Z]{2,26}" type="text" minlength="3" maxlength="25" placeholder="Enter last name" required>
+          </div>
+          <div class="email" for="email">
+            <label for="">Email</label>
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="8" maxlength="36" placeholder="Enter email" required>
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input type="password" minlength="8" maxlength="16" placeholder="Enter password" required>
+          </div>
+          <div class="born-in">
+            <label for="dob">Born in</label>
+            <input type="date" required>
+          </div>
+          <div class="checkradio">
+            <label for="en">en</label>
+            <input type="radio" value="0" name="user_type" formenctype="submit" value="0" checked>
+            <label for="ua">ua</label>
+            <input type="radio" value="0" name="user_type">
+          </div>
+          <div class="gender">
+            <select class="select-gender">
+              <option value="" disabled selected hidden>select gender</option>
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+          </div>
+          <div class="btn-send">
+            <input type="submit" value="Send">
+          </div>
+
+        </div>
+      </div>
+    </form>
+    <div class="file">
+      <input type="file">
+    </div>
+
+  </main>
+</body>
+
+</html>

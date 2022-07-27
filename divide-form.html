@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form left&right</title>
+  <link rel="stylesheet" href="forms-style.css">
+</head>
+<body>
+  <main>
+    <form action="form-succes.html">
+      <div class="form-hobby">
+        <div class="inline-hobby-container">
+          <div class="left-box">
+            <label for="login">Логін:</label>
+            <label for="password">Пароль:</label>
+            <label for="repeat-password">Повторіть пароль:</label>
+            <label for="gender">Стать:</label>
+            <div class="city">
+              <label class="valign" for="city">Вкажіть місто:</label>
+            </div>
+            <div class="hobby-label">
+              <label for="hobbies">Інтереси:</label>
+            </div>
+          </div>
+
+          <div class="right-box">
+            <input type="text" minlength="4" maxlength="16" required>
+            <input type="password" minlength="8" maxlength="16" required>
+            <input type="password" minlength="8" maxlength="16" required>
+            <div class="radio-left">
+              <input type="radio" value="0" name="user_type" formenctype="submit" value="0" checked>
+              <label for="man">чоловік</label>
+              <input type="radio" value="0" name="user_type">
+              <label for="woman">жінка</label>
+            </div>
+            <br><br>
+            <div class="city">
+              <select multiple>
+                <option value="">Житомир</option>
+                <option value="">Київ</option>
+                <option value="">Чернівці</option>
+              </select>
+            </div>
+            <div class="hobby-checkbox">
+              <input type="checkbox">
+              <label for="">футбол</label>
+              <input type="checkbox">
+              <label for="">шахи</label>
+              <input type="checkbox">
+              <label for="">малювання</label>
+
+              <input type="checkbox">
+              <label for="">музика</label>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="submit-hobby-form">
+          <input type="reset" value="Очистити">
+          <input type="submit" value="Відправити">
+        </div>
+      </div>
+    </form>
+
+  </main>
+</body>
+</html>
